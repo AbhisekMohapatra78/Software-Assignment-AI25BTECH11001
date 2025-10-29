@@ -4,4 +4,3 @@
 
 1. Just clone the repo
 2. Run the exe inside the folder codes
-# Software-Assignment-AI25BTECH11001
