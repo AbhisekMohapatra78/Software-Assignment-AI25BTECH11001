@@ -1,4 +1,4 @@
-#include"power_method.h"
+#include"methods.h"
 #include "utilities.h"
 
 void power_met(struct Image* img,double** u,double** e,double** v,int k)
@@ -43,6 +43,16 @@ void power_met(struct Image* img,double** u,double** e,double** v,int k)
 	//	printMat(k,k,e);
 }
 
-
+void G(double tau, double **g)
+{
+		
+		double t = (tau>0?1:-1)/((tau>0?tau:-tau)+sqrt(1+tau*tau));
+		double c = 1/sqrt(1+t*t);
+		if(t == 0){c=1/sqrt(2);t=1;}
+		g[0][0]=c;
+		g[0][1]=c*t;
+		g[1][0]=-g[0][1];
+		g[1][1]=c;
+}
 
 

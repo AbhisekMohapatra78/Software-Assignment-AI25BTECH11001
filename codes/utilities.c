@@ -30,7 +30,16 @@ void* mallocate(size_t x)
 		if(u==0){printf("not able to allocate\n");abort();}
 		return u;
 }
-void vecMulMat(int n , int m,double* v,double** A){};
+void vecMulMat(int n , int m,double* v,double** A,double* u){
+		for(int i = 0; i<n;i++)
+		{
+				u[i]=0;
+				for (int j = 0; j<n; j++) {
+						u[i]+=A[j][i]*v[j];
+				}
+		}
+
+};
 void QR(int n, int m, double** A, double**B,double**C)
 {
 		for(int i = 0; i<m;i++)
@@ -102,17 +111,17 @@ void allocMat(int n, int m,double*** A)
 {
 		
 		*A = (double**)mallocate(sizeof(double*)*n);
+		double* dat = mallocate(sizeof(double)*n*m);
 		for(int i =0 ; i<n;i++)
 		{
-				(*A)[i] = (double*)mallocate(sizeof(double)*m);
+				(*A)[i] = dat+(i*m);
 		}
 }
 void freeMat(int n, int m, double** A)
 {
-		for(int i =0 ; i<n;i++)
-		{
-				free(A[i]);
-		}
+		
+		free(A[0]);
+		
 		free(A);
 }
 
@@ -135,6 +144,12 @@ void transposeMat(int n , int m, double** A,double**B)
 				for(int j = 0; j<m;j++)
 						B[j][i]=A[i][j];
 }
+void transposeMatSwap(int n , double** A)
+{
+		for(int i = 0; i<n-1;i++)
+				for(int j = i+1; j<n;j++)
+				{double t=A[i][j];A[i][j]=A[j][i];A[j][i]=t;}
+}
 double err(int n,int m, double** actual,double** expected)
 {
 		double e = 0;
@@ -146,4 +161,28 @@ double err(int n,int m, double** actual,double** expected)
 				}
 		}
 		return sqrt(e);
+}
+double dotVec(int n, double* v, double* u)
+{
+		double s=0;
+		for(int i = 0; i<n;i++)
+		{
+				s+=v[i]*u[i];
+		}
+		return s;
+}
+void copyMat(int n, int m, double** source, double** dest)
+{
+		for(int i = 0; i<n;i++)
+				for(int j = 0; j<m;j++)
+						dest[i][j]=source[i][j];
+}
+void normalize(int n,double* A)
+{
+		double s=0;
+		for(int i = 0; i<n;i++)
+				s+=A[i]*A[i];
+		s=sqrt(s);
+		for(int i = 0; i<n;i++)
+				A[i]/=s;
 }

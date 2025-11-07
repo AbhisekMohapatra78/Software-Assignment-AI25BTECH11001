@@ -1,0 +1,5 @@
+../figs/greyscale.png
+../output/test.pbm
+200
+
+

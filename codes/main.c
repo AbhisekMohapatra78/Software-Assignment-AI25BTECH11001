@@ -6,9 +6,10 @@
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
 
-#include "power_method.h"
+#include "methods.h"
 #include "utilities.h"
 
+FILE* logging;
 
 int getImage(struct Image* img,const char* filename)
 {
@@ -19,7 +20,7 @@ int getImage(struct Image* img,const char* filename)
 				printf("Error in reading Img\n");
 				exit(1);
 		}
-		printf("Image Loaded from %s\nWidth:%d Height:%d Channels : %d\n",filename,img->width,img->height,n);
+		fprintf(logging,"Image Loaded from %s\nWidth:%d Height:%d Channels : %d\n",filename,img->width,img->height,n);
 		img->data=mallocate(sizeof(double)*img->width*img->height);
 		for(int j= 0; j<img->height;j++)
 		{
@@ -131,7 +132,7 @@ void setImgFromSVD(struct Image*img,double**U,double**E,double**V,int k)
 		
 		matMul(img->height,k,k,U,E,C);
 	matMul(img->height,k,img->width,C,V,E);
-		printf("Error Frobenius :%lf\n",err(img->height,img->width,C2,E));
+		fprintf(logging,"Error Frobenius :%lf\n",err(img->height,img->width,C2,E));
 		for(int i = 0; i<img->height;i++)
 				for(int j = 0; j<img->width;j++)
 				{
@@ -169,20 +170,29 @@ void compress(struct Image* img,int k)
 
 int main()
 {
+		char loggingfile[] = "../output/log.txt"; 
+		logging = fopen(loggingfile, "a");
+		if(logging==NULL) 
+		{
+		printf("logging in stdout\n");
+		logging=stdout;
+		}else 
+				printf("logging in %s\n",loggingfile);
 		clock_t start = clock();
 		struct Image img;
+		FILE* f;
+		f=fopen("init.txt", "r");
 		char file[256];
-		printf("Enter image file path (remove spaces in the path and only 255 characters):");
-		scanf("%s",file);
+		fscanf(f,"%s",file);
 		getImage(&img,file);
-		printf("Enter output (.pgm) file path (remove spaces in the path and only 255 characters):");
-		scanf("%s",file);
+		fscanf(f,"%s",file);
 		int k;
-		printf("enter the value of k:");
-		scanf("%d",&k);
+		fscanf(f,"%d",&k);
+		fprintf(logging,"Values extracted from the init.txt file.\n");
 		compress(&img,k);
 		writeImage(&img, file);
 		freeImage(&img);
-		printf("Time taken about %lf seconds.\n",((double)(clock()-start))/ CLOCKS_PER_SEC);
+		fprintf(logging,"Time taken about %lf seconds.\n",((double)(clock()-start))/ CLOCKS_PER_SEC);
+		fclose(f);
 		return  0;
 }
