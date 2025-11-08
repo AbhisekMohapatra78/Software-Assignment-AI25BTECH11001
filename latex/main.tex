@@ -20,7 +20,6 @@
 \usepackage{tkz-euclide} 
 \usepackage{listings}
 \usepackage{gvv}                                        
-%\def\inputGnumericTable{}                                 
 \usepackage[latin1]{inputenc}     
 \usepackage{xparse}
 \usepackage{color}                                            
@@ -35,30 +34,30 @@
 \usepackage{tabularx}
 \usepackage{array}
 \usepackage{float}
+\usepackage{subcaption}
+
 
 \begin{document}
 
 \title{Course Project (Software) : Image Compression Using Truncated SVD}
 \author{AI25BTECH11001 - ABHISEK MOHAPATRA}
 {\let\newpage\relax\maketitle}
+\newcommand{\tables}{../tables/}
+
+\newpage
+
+\section*{\LARGE Contents}
 
 \begin{enumerate}	
-
 \item \textbf{Summary of Gibert Strang's video}
-
 \item \textbf{Explanation of the implemented algorithm}
-
 \item \textbf{Compare different algorithms and explain why did you choose the particular algorithm}
-
 \item \textbf{Reconstructed images for different k}
-
 \item \textbf{Error analysis}
-
 \item \textbf{Discussion of trade-offs and reflections on implementation choice}
-
 \end{enumerate}
 
-
+\newpage
 
 \section*{\LARGE Summary of Gibert Strang's video}
 \vspace{5mm}
@@ -90,7 +89,7 @@ And,$\vec{U}$ and $\vec{V}$ can be found by
 \end{align}
 where $\sigma_i^2$ are the eigen values of $\vec{A}\vec{A}^\top$ and $\vec{A}^\top\vec{A}$
 
-
+\newpage
 
 \section*{\LARGE Explanation of the Implemented Algorithm}
 \vspace{5mm}
@@ -155,6 +154,7 @@ And, let $\vec{C}$ be the product of the elementary operation performed on $\vec
 \end{align}
 or, we take the diagonal elements of C as other vanishs as m increases.
 
+\newpage
 \section*{\LARGE Compare Different Algorithms and Explain Why Did You Choose the Particular Algorithm}
 
 In comparision to other algorithms, this algorithm is :
@@ -173,15 +173,337 @@ But there are some other trade of such that it is:
 
 I used it as it will increase the understanding of matrices in general and easy to implement.
 
+\newpage
 
-\section*{\LARGE Reconstructed images for different k}
-\section*{\LARGE Error analysis}
+\section*{\LARGE Reconstructed images for different k and Error analysis}
+\section*{Overview}
+This report demonstrates \textbf{SVD-based image compression} on six images using low-rank approximation $A_k = U_k \Sigma_k V_k^T$.  
+Each image is shown \textbf{with its compression results} for varying rank $k$.  
+Metrics include:
+\begin{itemize}
+    \item \textbf{Frobenius Error}: $\|A - A_k\|_F$
+    \item \textbf{Relative Error}: $\frac{\|A - A_k\|_F}{\|A\|_F}$
+    \item \textbf{Compression Ratio}: $\frac{mn}{k(m + n + 1)}$
+    \item \textbf{Time}: Full SVD + reconstruction
+\end{itemize}
 
+\vspace{5mm}
+
+% Einstein Images
+\subsection*{Einstein Image Compression}
+
+\noindent
+\begin{minipage}{0.48\textwidth}
+\begin{table}[H]
+    \centering
+    \caption{SVD Compression: \texttt{einstein.jpg} }
+    \label{tab:einstein}
+		\input{\tables einstein.tex}
+\end{table}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{./einsteinplot.jpg}
+		\caption{Einstein compression results}
+\end{figure}
+\end{minipage}
+
+\vspace{5mm}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.24\textwidth}
+        \includegraphics[width=\textwidth]{einstein_k2.jpg}
+        \caption{k=2}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.24\textwidth}
+        \includegraphics[width=\textwidth]{einstein_k5.jpg}
+        \caption{k=5}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.24\textwidth}
+        \includegraphics[width=\textwidth]{einstein_k20.jpg}
+        \caption{k=20}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.24\textwidth}
+        \includegraphics[width=\textwidth]{einstein_k100.jpg}
+        \caption{k=100}
+    \end{subfigure}
+    
+    \caption{Einstein image at different compression levels (k = 2, 5, 20, 100)}
+\end{figure}
+
+\vspace{5mm}
+
+% Globe Images
+\subsection*{Globe Image Compression}
+
+\noindent
+\begin{minipage}{0.48\textwidth}
+\begin{table}[H]
+    \centering
+    \caption{SVD Compression: \texttt{globe.jpg} }
+    \label{tab:globe}
+		\input{\tables globe.tex}
+\end{table}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{./globeplot.jpg}
+		\caption{Globe compression results}
+\end{figure}
+\end{minipage}
+
+\vspace{5mm}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.19\textwidth}
+        \includegraphics[width=\textwidth]{globe_k20.jpg}
+        \caption{k=1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.19\textwidth}
+        \includegraphics[width=\textwidth]{globe_k50.jpg}
+        \caption{k=5}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.19\textwidth}
+        \includegraphics[width=\textwidth]{globe_k100.jpg}
+        \caption{k=10}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.19\textwidth}
+        \includegraphics[width=\textwidth]{globe_k400.jpg}
+        \caption{k=20}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.19\textwidth}
+        \includegraphics[width=\textwidth]{globe_k600.jpg}
+        \caption{k=50}
+    \end{subfigure}
+    \caption{Globe image at different compression levels showing progressive quality improvement}
+\end{figure}
+
+\vspace{5mm}
+
+% Gauss Images
+\subsection*{Gauss Image Compression}
+
+\noindent
+\begin{minipage}{0.48\textwidth}
+\begin{table}[H]
+    \centering
+    \caption{SVD Compression: \texttt{gauss.jpg} }
+    \label{tab:gauss}
+		\input{\tables gauss.tex}
+\end{table}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{./gaussplot.jpg}
+		\caption{Gauss compression results}
+\end{figure}
+\end{minipage}
+
+\vspace{5mm}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{gauss_k100.jpg}
+        \caption{Gauss: k=100 (Low)}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{gauss_k300.jpg}
+        \caption{Gauss: k=300 (Medium)}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{gauss_k500.jpg}
+        \caption{Gauss: k=500 (High)}
+    \end{subfigure}
+    \caption{Gauss portrait at different compression levels}
+\end{figure}
+
+\vspace{5mm}
+
+% Greyscale Images
+\subsection*{Greyscale Image Compression}
+
+\noindent
+\begin{minipage}{0.48\textwidth}
+\begin{table}[H]
+    \centering
+    \caption{SVD Compression: \texttt{greyscale.jpg} }
+    \label{tab:greyscale}
+		\input{\tables greyscale.tex}
+\end{table}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{./greyscaleplot.jpg}
+		\caption{Greyscale compression results}
+\end{figure}
+\end{minipage}
+
+\vspace{5mm}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.24\textwidth}
+        \includegraphics[width=\textwidth]{greyscale_k2.jpg}
+        \caption{k=2}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.24\textwidth}
+        \includegraphics[width=\textwidth]{greyscale_k5.jpg}
+        \caption{k=5}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.24\textwidth}
+        \includegraphics[width=\textwidth]{greyscale_k20.jpg}
+        \caption{k=20}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.24\textwidth}
+        \includegraphics[width=\textwidth]{greyscale_k100.jpg}
+        \caption{k=100}
+    \end{subfigure}
+    
+    \vspace{0.3cm}
+    
+    \begin{subfigure}[b]{0.24\textwidth}
+        \includegraphics[width=\textwidth]{greyscale_k200.jpg}
+        \caption{k=200}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.24\textwidth}
+        \includegraphics[width=\textwidth]{greyscale_k300.jpg}
+        \caption{k=300}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.24\textwidth}
+        \includegraphics[width=\textwidth]{greyscale_k400.jpg}
+        \caption{k=400}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.24\textwidth}
+        \includegraphics[width=\textwidth]{greyscale_k600.jpg}
+        \caption{k=600}
+    \end{subfigure}
+    \caption{Greyscale image at different compression levels (k = 2, 5, 20, 100, 200, 300, 400, 600)}
+\end{figure}
+
+\vspace{5mm}
+
+% Newton Images
+\subsection*{Newton Image Compression (Color Channels)}
+
+\noindent
+\begin{minipage}{0.48\textwidth}
+\begin{table}[H]
+    \centering
+    \caption{SVD Compression: \texttt{newton.jpg} (All Channels)}
+    \label{tab:newton}
+		\input{\tables newton.tex}
+\end{table}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{./newton_k100.jpg}
+		\caption{Newton - k=100}
+\end{figure}
+\end{minipage}
+
+\vspace{5mm}
+
+\noindent
+\begin{minipage}{0.48\textwidth}
+\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{./newton_k300.jpg}
+		\caption{Newton - k=300}
+\end{figure}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{./newton_k500.jpg}
+		\caption{Newton - k=500}
+\end{figure}
+\end{minipage}
+
+\vspace{5mm}
+
+% Nebula Images
+\subsection*{Nebula Image Compression (Color Channels)}
+
+\noindent
+\begin{minipage}{0.48\textwidth}
+\begin{table}[H]
+    \centering
+    \caption{SVD Compression: \texttt{nebula2.jpg} (All Channels)}
+    \label{tab:nebula2}
+		\input{\tables nebula2.tex}
+\end{table}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{./nebula2_k100.jpg}
+		\caption{Nebula2 - k=100}
+\end{figure}
+\end{minipage}
+
+\vspace{5mm}
+
+\noindent
+\begin{minipage}{0.48\textwidth}
+\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{./nebula2_k300.jpg}
+		\caption{Nebula2 - k=300}
+\end{figure}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{./nebula2_k500.jpg}
+		\caption{Nebula2 - k=500}
+\end{figure}
+\end{minipage}
+
+\newpage
 \section*{\LARGE Discussion of Trade-offs and Reflections on Implementation Choice}
 
 Using the power block method we can get our images compressed in like 5 to 10 minutes but there are a few drawbacks to this method first it is very slow in comparison to other. Secondly it produce noisy images at low values of the k. Thirdly, this algorithm is also not perfect as it doesn't give the actual singular values correctly and even make mistakes in some of the lower values of k. 
 
 Methods like Golub Khan method which is very fast efficient and in the mean while is stable and does it produce very good images at lower value of k and is widely used.
 
-\end{document}
+\subsection*{Key Observations from Image Results}
 
+\begin{itemize}
+    \item \textbf{Einstein images}: Show clear progression from highly compressed (blocky at k=5) to recognizable features emerging at k=20, to good quality at k=50
+    \item \textbf{Globe images}: Demonstrate the challenge of capturing fine details - even at k=50, some finer features remain blurred
+    \item \textbf{Gauss portrait}: Similar to Einstein, shows good reconstruction quality starting around k=20 for facial features
+    \item \textbf{Block Power Method limitations}: Visible as noise at lower k values, requiring higher k for acceptable quality compared to more other methods
+\end{itemize}
+
+\end{document}

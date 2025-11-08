@@ -1,6 +1,0 @@
-../figs/nebula2.jpg
-3
-../output/testnebula22.ppm
-400
-
-

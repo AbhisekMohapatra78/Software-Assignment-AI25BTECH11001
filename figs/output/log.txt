@@ -1,0 +1,45 @@
+Image Loaded from ../figs/einstein.jpg
+Width:186 Height:182 Channels : 3
+Values extracted from the init.txt file.
+Error Frobenius :5.467152
+Time taken about 4.645426 seconds.
+Image Loaded from ../figs/einstein.jpg
+Width:186 Height:182 Channels : 3
+Values extracted from the init.txt file.
+Error Frobenius :5.467152
+Time taken about 4.741292 seconds.
+Image Loaded from ../figs/einstein.jpg
+Width:186 Height:182 Channels : 3
+Values extracted from the init.txt file.
+Error Frobenius :5.467152
+Time taken about 2.139718 seconds.
+Image Loaded from ../figs/gauss.jpg
+Width:1275 Height:1281 Channels : 3
+Values extracted from the init.txt file.
+Error Frobenius :263.373969
+Time taken about 65.241950 seconds.
+Image Loaded from ../figs/gauss.jpg
+Width:1275 Height:1281 Channels : 3
+Values extracted from the init.txt file.
+Error Frobenius :263.373969
+Time taken about 49.886999 seconds.
+Image Loaded from ../figs/gauss.jpg
+Width:1275 Height:1281 Channels : 3
+Values extracted from the init.txt file.
+Error Frobenius :142.177885
+Time taken about 112.880650 seconds.
+Image Loaded from ../figs/gauss.jpg
+Width:1275 Height:1281 Channels : 3
+Values extracted from the init.txt file.
+Error Frobenius :91.375548
+Time taken about 193.719542 seconds.
+Image Loaded from ../figs/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+Error Frobenius :37.641406
+Time taken about 34.162449 seconds.
+Image Loaded from ../figs/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+Error Frobenius :37.641406
+Time taken about 33.368754 seconds.

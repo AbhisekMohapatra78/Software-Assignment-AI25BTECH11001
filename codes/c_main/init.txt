@@ -1,0 +1,4 @@
+../../figs/original/newton.jpg
+3
+../../figs/output/testnewton.jpg500.ppm
+500

@@ -1,0 +1,944 @@
+Image Loaded from ../../figs/original/einstein.jpg
+Width:186 Height:182 Channels : 3
+Values extracted from the init.txt file.
+k = 2
+Frobenius Error (Channel: 1) :58.414655
+Relative Error(Channel: 1) :0.495683
+Compresion Ratio (Channel: 1) :45.869919
+Time taken about 0.013880 seconds.
+Image Loaded from ../../figs/original/einstein.jpg
+Width:186 Height:182 Channels : 3
+Values extracted from the init.txt file.
+k = 5
+Frobenius Error (Channel: 1) :49.460321
+Relative Error(Channel: 1) :0.419700
+Compresion Ratio (Channel: 1) :18.347967
+Time taken about 0.017178 seconds.
+Image Loaded from ../../figs/original/einstein.jpg
+Width:186 Height:182 Channels : 3
+Values extracted from the init.txt file.
+k = 20
+Frobenius Error (Channel: 1) :32.463701
+Relative Error(Channel: 1) :0.275474
+Compresion Ratio (Channel: 1) :4.586992
+Time taken about 0.040635 seconds.
+Image Loaded from ../../figs/original/einstein.jpg
+Width:186 Height:182 Channels : 3
+Values extracted from the init.txt file.
+k = 50
+Frobenius Error (Channel: 1) :21.398319
+Relative Error(Channel: 1) :0.181577
+Compresion Ratio (Channel: 1) :1.834797
+Time taken about 0.095089 seconds.
+Image Loaded from ../../figs/original/einstein.jpg
+Width:186 Height:182 Channels : 3
+Values extracted from the init.txt file.
+k = 100
+Frobenius Error (Channel: 1) :9.797069
+Relative Error(Channel: 1) :0.083134
+Compresion Ratio (Channel: 1) :0.917398
+Time taken about 0.220364 seconds.
+Image Loaded from ../../figs/original/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 2
+Frobenius Error (Channel: 1) :289.922118
+Relative Error(Channel: 1) :0.408694
+Compresion Ratio (Channel: 1) :214.639535
+Time taken about 1.050332 seconds.
+Image Loaded from ../../figs/original/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 5
+Frobenius Error (Channel: 1) :220.618264
+Relative Error(Channel: 1) :0.310999
+Compresion Ratio (Channel: 1) :85.855814
+Time taken about 1.066363 seconds.
+Image Loaded from ../../figs/original/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 20
+Frobenius Error (Channel: 1) :147.841208
+Relative Error(Channel: 1) :0.208407
+Compresion Ratio (Channel: 1) :21.463953
+Time taken about 1.310636 seconds.
+Image Loaded from ../../figs/original/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 50
+Frobenius Error (Channel: 1) :108.839559
+Relative Error(Channel: 1) :0.153428
+Compresion Ratio (Channel: 1) :8.585581
+Time taken about 2.058457 seconds.
+Image Loaded from ../../figs/original/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 100
+Frobenius Error (Channel: 1) :83.227807
+Relative Error(Channel: 1) :0.117324
+Compresion Ratio (Channel: 1) :4.292791
+Time taken about 3.397245 seconds.
+Image Loaded from ../../figs/original/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 200
+Frobenius Error (Channel: 1) :59.054838
+Relative Error(Channel: 1) :0.083248
+Compresion Ratio (Channel: 1) :2.146395
+Time taken about 6.544695 seconds.
+Image Loaded from ../../figs/original/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 300
+Frobenius Error (Channel: 1) :45.438304
+Relative Error(Channel: 1) :0.064053
+Compresion Ratio (Channel: 1) :1.430930
+Time taken about 10.540175 seconds.
+Image Loaded from ../../figs/original/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 400
+Frobenius Error (Channel: 1) :35.442830
+Relative Error(Channel: 1) :0.049963
+Compresion Ratio (Channel: 1) :1.073198
+Time taken about 15.266983 seconds.
+Image Loaded from ../../figs/original/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 600
+Frobenius Error (Channel: 1) :21.221517
+Relative Error(Channel: 1) :0.029915
+Compresion Ratio (Channel: 1) :0.715465
+Time taken about 27.286215 seconds.
+Image Loaded from ../../figs/original/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+k = 2
+Frobenius Error (Channel: 1) :174.315833
+Relative Error(Channel: 1) :0.206643
+Compresion Ratio (Channel: 1) :255.875061
+Time taken about 7.402600 seconds.
+Image Loaded from ../../figs/original/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+k = 5
+Frobenius Error (Channel: 1) :104.493372
+Relative Error(Channel: 1) :0.123872
+Compresion Ratio (Channel: 1) :102.350024
+Time taken about 7.251716 seconds.
+Image Loaded from ../../figs/original/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+k = 20
+Frobenius Error (Channel: 1) :60.529002
+Relative Error(Channel: 1) :0.071754
+Compresion Ratio (Channel: 1) :25.587506
+Time taken about 7.970960 seconds.
+Image Loaded from ../../figs/original/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+k = 50
+Frobenius Error (Channel: 1) :48.606418
+Relative Error(Channel: 1) :0.057621
+Compresion Ratio (Channel: 1) :10.235002
+Time taken about 8.987089 seconds.
+Image Loaded from ../../figs/original/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+k = 100
+Frobenius Error (Channel: 1) :41.940710
+Relative Error(Channel: 1) :0.049719
+Compresion Ratio (Channel: 1) :5.117501
+Time taken about 10.960960 seconds.
+Image Loaded from ../../figs/original/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+k = 200
+Frobenius Error (Channel: 1) :37.641406
+Relative Error(Channel: 1) :0.044622
+Compresion Ratio (Channel: 1) :2.558751
+Time taken about 16.258967 seconds.
+Image Loaded from ../../figs/original/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+k = 300
+Frobenius Error (Channel: 1) :33.672960
+Relative Error(Channel: 1) :0.039918
+Compresion Ratio (Channel: 1) :1.705834
+Time taken about 23.152909 seconds.
+Image Loaded from ../../figs/original/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+k = 400
+Frobenius Error (Channel: 1) :29.731544
+Relative Error(Channel: 1) :0.035245
+Compresion Ratio (Channel: 1) :1.279375
+Time taken about 30.807236 seconds.
+Image Loaded from ../../figs/original/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+k = 600
+Frobenius Error (Channel: 1) :22.656697
+Relative Error(Channel: 1) :0.026858
+Compresion Ratio (Channel: 1) :0.852917
+Time taken about 60.323506 seconds.
+Image Loaded from ../../figs/original/gauss.jpg
+Width:1275 Height:1281 Channels : 3
+Values extracted from the init.txt file.
+k = 100
+Frobenius Error (Channel: 1) :321.625252
+Relative Error(Channel: 1) :0.300774
+Compresion Ratio (Channel: 1) :6.387466
+Time taken about 10.221594 seconds.
+Image Loaded from ../../figs/original/gauss.jpg
+Width:1275 Height:1281 Channels : 3
+Values extracted from the init.txt file.
+k = 300
+Frobenius Error (Channel: 1) :189.275813
+Relative Error(Channel: 1) :0.177005
+Compresion Ratio (Channel: 1) :2.129155
+Time taken about 24.814936 seconds.
+Image Loaded from ../../figs/original/gauss.jpg
+Width:1275 Height:1281 Channels : 3
+Values extracted from the init.txt file.
+k = 500
+Frobenius Error (Channel: 1) :110.299548
+Relative Error(Channel: 1) :0.103149
+Compresion Ratio (Channel: 1) :1.277493
+Time taken about 61.517002 seconds.
+Image Loaded from ../../figs/original/newton.jpg
+Width:836 Height:836 Channels : 3
+Values extracted from the init.txt file.
+k = 10
+Frobenius Error (Channel: 1) :154.770289
+Relative Error(Channel: 1) :0.358584
+Compresion Ratio (Channel: 1) :41.775015
+Frobenius Error (Channel: 2) :153.714932
+Relative Error(Channel: 2) :0.377029
+Compresion Ratio (Channel: 2) :41.775015
+Frobenius Error (Channel: 3) :145.577311
+Relative Error(Channel: 3) :0.428282
+Compresion Ratio (Channel: 3) :41.775015
+Time taken about 2.846532 seconds.
+Image Loaded from ../../figs/original/newton.jpg
+Width:836 Height:836 Channels : 3
+Values extracted from the init.txt file.
+k = 50
+Frobenius Error (Channel: 1) :125.519555
+Relative Error(Channel: 1) :0.290814
+Compresion Ratio (Channel: 1) :8.355003
+Frobenius Error (Channel: 2) :125.182369
+Relative Error(Channel: 2) :0.307045
+Compresion Ratio (Channel: 2) :8.355003
+Frobenius Error (Channel: 3) :125.006233
+Relative Error(Channel: 3) :0.367763
+Compresion Ratio (Channel: 3) :8.355003
+Time taken about 5.497901 seconds.
+Image Loaded from ../../figs/original/newton.jpg
+Width:836 Height:836 Channels : 3
+Values extracted from the init.txt file.
+k = 100
+Frobenius Error (Channel: 1) :115.507517
+Relative Error(Channel: 1) :0.267617
+Compresion Ratio (Channel: 1) :4.177501
+Frobenius Error (Channel: 2) :115.313323
+Relative Error(Channel: 2) :0.282839
+Compresion Ratio (Channel: 2) :4.177501
+Frobenius Error (Channel: 3) :115.325310
+Relative Error(Channel: 3) :0.339282
+Compresion Ratio (Channel: 3) :4.177501
+Time taken about 9.265402 seconds.
+Image Loaded from ../../figs/original/newton.jpg
+Width:836 Height:836 Channels : 3
+Values extracted from the init.txt file.
+k = 300
+Frobenius Error (Channel: 1) :84.763187
+Relative Error(Channel: 1) :0.196386
+Compresion Ratio (Channel: 1) :1.392500
+Frobenius Error (Channel: 2) :84.794664
+Relative Error(Channel: 2) :0.207983
+Compresion Ratio (Channel: 2) :1.392500
+Frobenius Error (Channel: 3) :84.742878
+Relative Error(Channel: 3) :0.249310
+Compresion Ratio (Channel: 3) :1.392500
+Time taken about 30.138029 seconds.
+Image Loaded from ../../figs/original/newton.jpg
+Width:836 Height:836 Channels : 3
+Values extracted from the init.txt file.
+k = 500
+Frobenius Error (Channel: 1) :56.345059
+Relative Error(Channel: 1) :0.130545
+Compresion Ratio (Channel: 1) :0.835500
+Frobenius Error (Channel: 2) :56.378379
+Relative Error(Channel: 2) :0.138284
+Compresion Ratio (Channel: 2) :0.835500
+Frobenius Error (Channel: 3) :56.368131
+Relative Error(Channel: 3) :0.165832
+Compresion Ratio (Channel: 3) :0.835500
+Time taken about 61.888933 seconds.
+Image Loaded from ../../figs/original/nebula2.jpg
+Width:1280 Height:1280 Channels : 3
+Values extracted from the init.txt file.
+k = 100
+Frobenius Error (Channel: 1) :221.047219
+Relative Error(Channel: 1) :0.339730
+Compresion Ratio (Channel: 1) :6.397501
+Frobenius Error (Channel: 2) :222.365075
+Relative Error(Channel: 2) :0.338405
+Compresion Ratio (Channel: 2) :6.397501
+Frobenius Error (Channel: 3) :215.959644
+Relative Error(Channel: 3) :0.355943
+Compresion Ratio (Channel: 3) :6.397501
+Time taken about 37.376855 seconds.
+Image Loaded from ../../figs/original/nebula2.jpg
+Width:1280 Height:1280 Channels : 3
+Values extracted from the init.txt file.
+k = 300
+Frobenius Error (Channel: 1) :150.643481
+Relative Error(Channel: 1) :0.231526
+Compresion Ratio (Channel: 1) :2.132500
+Frobenius Error (Channel: 2) :151.503918
+Relative Error(Channel: 2) :0.230566
+Compresion Ratio (Channel: 2) :2.132500
+Frobenius Error (Channel: 3) :150.742221
+Relative Error(Channel: 3) :0.248452
+Compresion Ratio (Channel: 3) :2.132500
+Time taken about 83.269272 seconds.
+Image Loaded from ../../figs/original/nebula2.jpg
+Width:1280 Height:1280 Channels : 3
+Values extracted from the init.txt file.
+k = 500
+Frobenius Error (Channel: 1) :104.236323
+Relative Error(Channel: 1) :0.160202
+Compresion Ratio (Channel: 1) :1.279500
+Frobenius Error (Channel: 2) :104.078207
+Relative Error(Channel: 2) :0.158391
+Compresion Ratio (Channel: 2) :1.279500
+Frobenius Error (Channel: 3) :104.018120
+Relative Error(Channel: 3) :0.171442
+Compresion Ratio (Channel: 3) :1.279500
+Time taken about 189.602955 seconds.
+Image Loaded from ../../figs/original/einstein.jpg
+Width:186 Height:182 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :117.846876
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 0.009833 seconds.
+Image Loaded from ../../figs/original/einstein.jpg
+Width:186 Height:182 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :117.846876
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 0.010263 seconds.
+Image Loaded from ../../figs/original/einstein.jpg
+Width:186 Height:182 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :117.846876
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 0.010383 seconds.
+Image Loaded from ../../figs/original/einstein.jpg
+Width:186 Height:182 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :117.846876
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 0.009909 seconds.
+Image Loaded from ../../figs/original/einstein.jpg
+Width:186 Height:182 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :117.846876
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 0.009970 seconds.
+Image Loaded from ../../figs/original/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :709.386667
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 0.960106 seconds.
+Image Loaded from ../../figs/original/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :709.386667
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 0.658026 seconds.
+Image Loaded from ../../figs/original/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :709.386667
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 0.657098 seconds.
+Image Loaded from ../../figs/original/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :709.386667
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 0.658975 seconds.
+Image Loaded from ../../figs/original/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :709.386667
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 0.657202 seconds.
+Image Loaded from ../../figs/original/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :843.560893
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 8.670865 seconds.
+Image Loaded from ../../figs/original/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :843.560893
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 9.218510 seconds.
+Image Loaded from ../../figs/original/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :843.560893
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 8.129268 seconds.
+Image Loaded from ../../figs/original/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :843.560893
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 8.718071 seconds.
+Image Loaded from ../../figs/original/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :843.560893
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 8.469573 seconds.
+Image Loaded from ../../figs/original/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :709.386667
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 0.683927 seconds.
+Image Loaded from ../../figs/original/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :709.386667
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 0.676556 seconds.
+Image Loaded from ../../figs/original/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :709.386667
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 0.674308 seconds.
+Image Loaded from ../../figs/original/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :709.386667
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 0.658281 seconds.
+Image Loaded from ../../figs/original/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :843.560893
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 7.643330 seconds.
+Image Loaded from ../../figs/original/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :843.560893
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 9.151450 seconds.
+Image Loaded from ../../figs/original/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :843.560893
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 9.511185 seconds.
+Image Loaded from ../../figs/original/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :843.560893
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 7.793118 seconds.
+Image Loaded from ../../figs/original/nebula2.jpg
+Width:1280 Height:1280 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :650.655983
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 7.900598 seconds.
+Image Loaded from ../../figs/original/nebula2.jpg
+Width:1280 Height:1280 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :650.655983
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 7.538122 seconds.
+Image Loaded from ../../figs/original/nebula2.jpg
+Width:1280 Height:1280 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :650.655983
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 7.858080 seconds.
+Image Loaded from ../../figs/original/gauss.jpg
+Width:1275 Height:1281 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :1069.324040
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 5.939449 seconds.
+Image Loaded from ../../figs/original/gauss.jpg
+Width:1275 Height:1281 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :1069.324040
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 5.046145 seconds.
+Image Loaded from ../../figs/original/gauss.jpg
+Width:1275 Height:1281 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :1069.324040
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 5.615897 seconds.
+Image Loaded from ../../figs/original/newton.jpg
+Width:836 Height:836 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :431.614906
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 0.679878 seconds.
+Image Loaded from ../../figs/original/newton.jpg
+Width:836 Height:836 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :431.614906
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 0.683037 seconds.
+Image Loaded from ../../figs/original/newton.jpg
+Width:836 Height:836 Channels : 3
+Values extracted from the init.txt file.
+k = 0
+Frobenius Error (Channel: 1) :431.614906
+Relative Error(Channel: 1) :1.000000
+Compresion Ratio (Channel: 1) :inf
+Time taken about 0.667282 seconds.
+Image Loaded from ../../figs/original/nebula2.jpg
+Width:1280 Height:1280 Channels : 3
+Values extracted from the init.txt file.
+k = 100
+Frobenius Error (Channel: 1) :221.047219
+Relative Error(Channel: 1) :0.339730
+Compresion Ratio (Channel: 1) :6.397501
+Time taken about 13.380135 seconds.
+Image Loaded from ../../figs/original/nebula2.jpg
+Width:1280 Height:1280 Channels : 3
+Values extracted from the init.txt file.
+k = 300
+Frobenius Error (Channel: 1) :150.643481
+Relative Error(Channel: 1) :0.231526
+Compresion Ratio (Channel: 1) :2.132500
+Time taken about 29.315717 seconds.
+Image Loaded from ../../figs/original/nebula2.jpg
+Width:1280 Height:1280 Channels : 3
+Values extracted from the init.txt file.
+k = 500
+Frobenius Error (Channel: 1) :104.236323
+Relative Error(Channel: 1) :0.160202
+Compresion Ratio (Channel: 1) :1.279500
+Time taken about 69.459383 seconds.
+Image Loaded from ../../figs/original/gauss.jpg
+Width:1275 Height:1281 Channels : 3
+Values extracted from the init.txt file.
+k = 100
+Frobenius Error (Channel: 1) :321.625252
+Relative Error(Channel: 1) :0.300774
+Compresion Ratio (Channel: 1) :6.387466
+Time taken about 10.409236 seconds.
+Image Loaded from ../../figs/original/gauss.jpg
+Width:1275 Height:1281 Channels : 3
+Values extracted from the init.txt file.
+k = 300
+Frobenius Error (Channel: 1) :189.275813
+Relative Error(Channel: 1) :0.177005
+Compresion Ratio (Channel: 1) :2.129155
+Time taken about 25.271476 seconds.
+Image Loaded from ../../figs/original/gauss.jpg
+Width:1275 Height:1281 Channels : 3
+Values extracted from the init.txt file.
+k = 500
+Frobenius Error (Channel: 1) :110.299548
+Relative Error(Channel: 1) :0.103149
+Compresion Ratio (Channel: 1) :1.277493
+Time taken about 59.998245 seconds.
+Image Loaded from ../../figs/original/newton.jpg
+Width:836 Height:836 Channels : 3
+Values extracted from the init.txt file.
+k = 100
+Frobenius Error (Channel: 1) :115.507517
+Relative Error(Channel: 1) :0.267617
+Compresion Ratio (Channel: 1) :4.177501
+Time taken about 3.082470 seconds.
+Image Loaded from ../../figs/original/newton.jpg
+Width:836 Height:836 Channels : 3
+Values extracted from the init.txt file.
+k = 300
+Frobenius Error (Channel: 1) :84.763187
+Relative Error(Channel: 1) :0.196386
+Compresion Ratio (Channel: 1) :1.392500
+Time taken about 10.655136 seconds.
+Image Loaded from ../../figs/original/newton.jpg
+Width:836 Height:836 Channels : 3
+Values extracted from the init.txt file.
+k = 500
+Frobenius Error (Channel: 1) :56.345059
+Relative Error(Channel: 1) :0.130545
+Compresion Ratio (Channel: 1) :0.835500
+Time taken about 21.497463 seconds.
+Image Loaded from ../../figs/original/einstein.jpg
+Width:186 Height:182 Channels : 3
+Values extracted from the init.txt file.
+k = 2
+Frobenius Error (Channel: 1) :58.414655
+Relative Error(Channel: 1) :0.495683
+Compresion Ratio (Channel: 1) :45.869919
+Time taken about 0.012756 seconds.
+Image Loaded from ../../figs/original/einstein.jpg
+Width:186 Height:182 Channels : 3
+Values extracted from the init.txt file.
+k = 5
+Frobenius Error (Channel: 1) :49.460321
+Relative Error(Channel: 1) :0.419700
+Compresion Ratio (Channel: 1) :18.347967
+Time taken about 0.016661 seconds.
+Image Loaded from ../../figs/original/einstein.jpg
+Width:186 Height:182 Channels : 3
+Values extracted from the init.txt file.
+k = 20
+Frobenius Error (Channel: 1) :32.463701
+Relative Error(Channel: 1) :0.275474
+Compresion Ratio (Channel: 1) :4.586992
+Time taken about 0.039092 seconds.
+Image Loaded from ../../figs/original/einstein.jpg
+Width:186 Height:182 Channels : 3
+Values extracted from the init.txt file.
+k = 50
+Frobenius Error (Channel: 1) :21.398319
+Relative Error(Channel: 1) :0.181577
+Compresion Ratio (Channel: 1) :1.834797
+Time taken about 0.099611 seconds.
+Image Loaded from ../../figs/original/einstein.jpg
+Width:186 Height:182 Channels : 3
+Values extracted from the init.txt file.
+k = 100
+Frobenius Error (Channel: 1) :9.797069
+Relative Error(Channel: 1) :0.083134
+Compresion Ratio (Channel: 1) :0.917398
+Time taken about 0.222440 seconds.
+Image Loaded from ../../figs/original/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 2
+Frobenius Error (Channel: 1) :289.922118
+Relative Error(Channel: 1) :0.408694
+Compresion Ratio (Channel: 1) :214.639535
+Time taken about 0.832720 seconds.
+Image Loaded from ../../figs/original/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 5
+Frobenius Error (Channel: 1) :220.618264
+Relative Error(Channel: 1) :0.310999
+Compresion Ratio (Channel: 1) :85.855814
+Time taken about 0.789840 seconds.
+Image Loaded from ../../figs/original/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 20
+Frobenius Error (Channel: 1) :147.841208
+Relative Error(Channel: 1) :0.208407
+Compresion Ratio (Channel: 1) :21.463953
+Time taken about 1.123161 seconds.
+Image Loaded from ../../figs/original/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 50
+Frobenius Error (Channel: 1) :108.839559
+Relative Error(Channel: 1) :0.153428
+Compresion Ratio (Channel: 1) :8.585581
+Time taken about 1.785038 seconds.
+Image Loaded from ../../figs/original/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 100
+Frobenius Error (Channel: 1) :83.227807
+Relative Error(Channel: 1) :0.117324
+Compresion Ratio (Channel: 1) :4.292791
+Time taken about 3.163458 seconds.
+Image Loaded from ../../figs/original/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+k = 2
+Frobenius Error (Channel: 1) :174.315833
+Relative Error(Channel: 1) :0.206643
+Compresion Ratio (Channel: 1) :255.875061
+Time taken about 9.064962 seconds.
+Image Loaded from ../../figs/original/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+k = 5
+Frobenius Error (Channel: 1) :104.493372
+Relative Error(Channel: 1) :0.123872
+Compresion Ratio (Channel: 1) :102.350024
+Time taken about 7.335286 seconds.
+Image Loaded from ../../figs/original/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+k = 20
+Frobenius Error (Channel: 1) :60.529002
+Relative Error(Channel: 1) :0.071754
+Compresion Ratio (Channel: 1) :25.587506
+Time taken about 9.388183 seconds.
+Image Loaded from ../../figs/original/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+k = 50
+Frobenius Error (Channel: 1) :48.606418
+Relative Error(Channel: 1) :0.057621
+Compresion Ratio (Channel: 1) :10.235002
+Time taken about 9.123234 seconds.
+Image Loaded from ../../figs/original/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+k = 100
+Frobenius Error (Channel: 1) :41.940710
+Relative Error(Channel: 1) :0.049719
+Compresion Ratio (Channel: 1) :5.117501
+Time taken about 11.285847 seconds.
+Image Loaded from ../../figs/original/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 200
+Frobenius Error (Channel: 1) :59.054838
+Relative Error(Channel: 1) :0.083248
+Compresion Ratio (Channel: 1) :2.146395
+Time taken about 6.393518 seconds.
+Image Loaded from ../../figs/original/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 300
+Frobenius Error (Channel: 1) :45.438304
+Relative Error(Channel: 1) :0.064053
+Compresion Ratio (Channel: 1) :1.430930
+Time taken about 10.501408 seconds.
+Image Loaded from ../../figs/original/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 400
+Frobenius Error (Channel: 1) :35.442830
+Relative Error(Channel: 1) :0.049963
+Compresion Ratio (Channel: 1) :1.073198
+Time taken about 15.492589 seconds.
+Image Loaded from ../../figs/original/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 600
+Frobenius Error (Channel: 1) :21.221517
+Relative Error(Channel: 1) :0.029915
+Compresion Ratio (Channel: 1) :0.715465
+Time taken about 28.334537 seconds.
+Image Loaded from ../../figs/original/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+k = 200
+Frobenius Error (Channel: 1) :37.641406
+Relative Error(Channel: 1) :0.044622
+Compresion Ratio (Channel: 1) :2.558751
+Time taken about 16.738024 seconds.
+Image Loaded from ../../figs/original/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+k = 300
+Frobenius Error (Channel: 1) :33.672960
+Relative Error(Channel: 1) :0.039918
+Compresion Ratio (Channel: 1) :1.705834
+Time taken about 23.463120 seconds.
+Image Loaded from ../../figs/original/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+k = 400
+Frobenius Error (Channel: 1) :29.731544
+Relative Error(Channel: 1) :0.035245
+Compresion Ratio (Channel: 1) :1.279375
+Time taken about 31.449858 seconds.
+Image Loaded from ../../figs/original/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+k = 600
+Frobenius Error (Channel: 1) :22.656697
+Relative Error(Channel: 1) :0.026858
+Compresion Ratio (Channel: 1) :0.852917
+Time taken about 61.159455 seconds.
+Image Loaded from ../../figs/original/nebula2.jpg
+Width:1280 Height:1280 Channels : 3
+Values extracted from the init.txt file.
+k = 200
+Frobenius Error (Channel: 1) :180.318917
+Relative Error(Channel: 1) :0.277134
+Compresion Ratio (Channel: 1) :3.198750
+Frobenius Error (Channel: 2) :181.998121
+Relative Error(Channel: 2) :0.276973
+Compresion Ratio (Channel: 2) :3.198750
+Frobenius Error (Channel: 3) :179.712013
+Relative Error(Channel: 3) :0.296200
+Compresion Ratio (Channel: 3) :3.198750
+Time taken about 59.798876 seconds.
+Image Loaded from ../../figs/original/nebula2.jpg
+Width:1280 Height:1280 Channels : 3
+Values extracted from the init.txt file.
+k = 300
+Frobenius Error (Channel: 1) :150.643481
+Relative Error(Channel: 1) :0.231526
+Compresion Ratio (Channel: 1) :2.132500
+Frobenius Error (Channel: 2) :151.503918
+Relative Error(Channel: 2) :0.230566
+Compresion Ratio (Channel: 2) :2.132500
+Frobenius Error (Channel: 3) :150.742221
+Relative Error(Channel: 3) :0.248452
+Compresion Ratio (Channel: 3) :2.132500
+Time taken about 85.225308 seconds.
+Image Loaded from ../../figs/original/nebula2.jpg
+Width:1280 Height:1280 Channels : 3
+Values extracted from the init.txt file.
+k = 100
+Frobenius Error (Channel: 1) :221.047219
+Relative Error(Channel: 1) :0.339730
+Compresion Ratio (Channel: 1) :6.397501
+Frobenius Error (Channel: 2) :222.365075
+Relative Error(Channel: 2) :0.338405
+Compresion Ratio (Channel: 2) :6.397501
+Frobenius Error (Channel: 3) :215.959644
+Relative Error(Channel: 3) :0.355943
+Compresion Ratio (Channel: 3) :6.397501
+Time taken about 38.657434 seconds.
+Image Loaded from ../../figs/original/nebula2.jpg
+Width:1280 Height:1280 Channels : 3
+Values extracted from the init.txt file.
+k = 300
+Frobenius Error (Channel: 1) :150.643481
+Relative Error(Channel: 1) :0.231526
+Compresion Ratio (Channel: 1) :2.132500
+Frobenius Error (Channel: 2) :151.503918
+Relative Error(Channel: 2) :0.230566
+Compresion Ratio (Channel: 2) :2.132500
+Frobenius Error (Channel: 3) :150.742221
+Relative Error(Channel: 3) :0.248452
+Compresion Ratio (Channel: 3) :2.132500
+Time taken about 86.050310 seconds.
+Image Loaded from ../../figs/original/nebula2.jpg
+Width:1280 Height:1280 Channels : 3
+Values extracted from the init.txt file.
+k = 500
+Frobenius Error (Channel: 1) :104.236323
+Relative Error(Channel: 1) :0.160202
+Compresion Ratio (Channel: 1) :1.279500
+Frobenius Error (Channel: 2) :104.078207
+Relative Error(Channel: 2) :0.158391
+Compresion Ratio (Channel: 2) :1.279500
+Frobenius Error (Channel: 3) :104.018120
+Relative Error(Channel: 3) :0.171442
+Compresion Ratio (Channel: 3) :1.279500
+Time taken about 209.372516 seconds.
+Image Loaded from ../../figs/original/newton.jpg
+Width:836 Height:836 Channels : 3
+Values extracted from the init.txt file.
+k = 100
+Frobenius Error (Channel: 1) :115.507517
+Relative Error(Channel: 1) :0.267617
+Compresion Ratio (Channel: 1) :4.177501
+Frobenius Error (Channel: 2) :115.313323
+Relative Error(Channel: 2) :0.282839
+Compresion Ratio (Channel: 2) :4.177501
+Frobenius Error (Channel: 3) :115.325310
+Relative Error(Channel: 3) :0.339282
+Compresion Ratio (Channel: 3) :4.177501
+Time taken about 9.288963 seconds.
+Image Loaded from ../../figs/original/newton.jpg
+Width:836 Height:836 Channels : 3
+Values extracted from the init.txt file.
+k = 300
+Frobenius Error (Channel: 1) :84.763187
+Relative Error(Channel: 1) :0.196386
+Compresion Ratio (Channel: 1) :1.392500
+Frobenius Error (Channel: 2) :84.794664
+Relative Error(Channel: 2) :0.207983
+Compresion Ratio (Channel: 2) :1.392500
+Frobenius Error (Channel: 3) :84.742878
+Relative Error(Channel: 3) :0.249310
+Compresion Ratio (Channel: 3) :1.392500
+Time taken about 31.398315 seconds.
+Image Loaded from ../../figs/original/newton.jpg
+Width:836 Height:836 Channels : 3
+Values extracted from the init.txt file.
+k = 500
+Frobenius Error (Channel: 1) :56.345059
+Relative Error(Channel: 1) :0.130545
+Compresion Ratio (Channel: 1) :0.835500
+Frobenius Error (Channel: 2) :56.378379
+Relative Error(Channel: 2) :0.138284
+Compresion Ratio (Channel: 2) :0.835500
+Frobenius Error (Channel: 3) :56.368131
+Relative Error(Channel: 3) :0.165832
+Compresion Ratio (Channel: 3) :0.835500
+Time taken about 63.864639 seconds.
