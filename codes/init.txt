@@ -1,5 +1,5 @@
-../figs/nebula.jpg
+../figs/gauss.jpg
 ../output/test.pbm
-2000
+200
 
 
