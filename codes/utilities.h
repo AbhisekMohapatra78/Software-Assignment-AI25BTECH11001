@@ -3,11 +3,12 @@
 #include <stdio.h>
 #include <math.h>
 struct Image{
-		double* data;
+		double** data;
 		int width;
 		int height;
+		int channels;
 };
-double* getPixel(struct Image* img, int x, int y);
+double* getPixel(struct Image* img,int n, int x, int y);
 void* mallocate(size_t x);
 
 void matMul(int n , int k, int m, double** A, double**B,double**C);

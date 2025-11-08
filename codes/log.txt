@@ -131,3 +131,111 @@ Values extracted from the init.txt file.
 k = 200
 Error Frobenius :249.997357
 Time taken about 17.226651 seconds.
+Image Loaded from ../figs/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 300
+Error Frobenius :45.438304
+Time taken about 10.429567 seconds.
+Image Loaded from ../figs/nebula.jpg
+Width:3840 Height:2160 Channels : 3
+Values extracted from the init.txt file.
+k = 2000
+Error Frobenius :57.710254
+Time taken about 5805.323344 seconds.
+Image Loaded from ../figs/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 300
+Error Frobenius :44.804757
+Time taken about 23.825445 seconds.
+Image Loaded from ../figs/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 300
+Error Frobenius :44.804757
+Time taken about 86.025939 seconds.
+Image Loaded from ../figs/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 300
+Error Frobenius :44.804757
+Time taken about 86.943632 seconds.
+Image Loaded from ../figs/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 300
+Error Frobenius :45.438304
+Time taken about 10.220878 seconds.
+Image Loaded from ../figs/globe.jpg
+Width:840 Height:879 Channels : 3
+Values extracted from the init.txt file.
+k = 300
+Error Frobenius :45.438304
+Time taken about 10.352152 seconds.
+Image Loaded from ../figs/einstein.jpg
+Width:186 Height:182 Channels : 3
+Values extracted from the init.txt file.
+k = 100
+Error Frobenius :9.797069
+Time taken about 0.223843 seconds.
+Image Loaded from ../figs/einstein.jpg
+Width:186 Height:182 Channels : 3
+Values extracted from the init.txt file.
+k = 100
+Error Frobenius :9.797069
+Time taken about 0.143309 seconds.
+Image Loaded from ../figs/einstein.jpg
+Width:186 Height:182 Channels : 3
+Values extracted from the init.txt file.
+k = 100
+Error Frobenius :9.797069
+Time taken about 0.144179 seconds.
+Image Loaded from ../figs/einstein.jpg
+Width:186 Height:182 Channels : 3
+Values extracted from the init.txt file.
+k = 100
+Error Frobenius :9.797069
+Time taken about 0.221889 seconds.
+Image Loaded from ../figs/einstein.jpg
+Width:186 Height:182 Channels : 3
+Values extracted from the init.txt file.
+k = 100
+Error Frobenius :9.797069
+Time taken about 0.144987 seconds.
+Image Loaded from ../figs/einstein.jpg
+Width:186 Height:182 Channels : 3
+Values extracted from the init.txt file.
+k = 100
+Error Frobenius :9.797069
+Time taken about 1.215338 seconds.
+Image Loaded from ../figs/einstein.jpg
+Width:186 Height:182 Channels : 3
+Values extracted from the init.txt file.
+k = 100
+Error Frobenius :9.797069
+Time taken about 1.361730 seconds.
+Image Loaded from ../figs/nebula2.jpeg
+Width:246 Height:205 Channels : 3
+Values extracted from the init.txt file.
+k = 200
+Error Frobenius(Channel: 1) :4.677446
+Error Frobenius(Channel: 2) :4.881871
+Error Frobenius(Channel: 3) :4.657486
+Time taken about 1.884846 seconds.
+Image Loaded from ../figs/nebula2.jpg
+Width:1280 Height:1280 Channels : 3
+Values extracted from the init.txt file.
+k = 400
+Error Frobenius(Channel: 1) :125.891594
+Error Frobenius(Channel: 2) :126.204231
+Error Frobenius(Channel: 3) :125.889841
+Time taken about 110.162748 seconds.
+Image Loaded from ../figs/nebula2.jpg
+Width:1280 Height:1280 Channels : 3
+Values extracted from the init.txt file.
+k = 400
+Error Frobenius(Channel: 1) :125.891594
+Error Frobenius(Channel: 2) :126.204231
+Error Frobenius(Channel: 3) :125.889841
+Time taken about 114.291095 seconds.

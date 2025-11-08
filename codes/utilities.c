@@ -1,7 +1,7 @@
 #include "utilities.h"
-double* getPixel(struct Image* img, int x, int y)
+double* getPixel(struct Image* img,int n, int x, int y)
 {
-		return &(img->data[img->width*y+x]);
+		return &(img->data[n][img->width*y+x]);
 }
 void matMul(int n , int k, int m, double** A, double**B,double**C)
 {

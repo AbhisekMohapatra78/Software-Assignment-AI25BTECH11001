@@ -24,11 +24,12 @@ int getImage(struct Image* img,const char* filename)
 				exit(1);
 		}
 		fprintf(logging,"Image Loaded from %s\nWidth:%d Height:%d Channels : %d\n",filename,img->width,img->height,n);
-		img->data=mallocate(sizeof(double)*img->width*img->height);
+		allocMat(img->channels,img->height*img->width,&img->data);
 		for(int j= 0; j<img->height;j++)
 		{
 				for (int i =0; i<img->width; i++) {
-						img->data[(img->width*j+i)]=data[(img->width*j+i)*n]/255.0;
+						for(int l = 0;l<img->channels;l++)
+						img->data[l][(img->width*j+i)]=data[(img->width*j+i)*n+l]/255.0;
 				}
 		}
 		stbi_image_free(data);
@@ -41,16 +42,19 @@ int writeImage(struct Image* img,const char* filename)
 		FILE* f;
 		f = fopen(filename,"w");
 
-		fprintf(f,"P2\n");
+		if(img->channels==1)fprintf(f,"P2\n");
+		else fprintf(f,"P3\n");
 		fprintf(f,"%d %d\n",img->width,img->height);
 		fprintf(f,"255\n");
 
 		for(int j= 0; j<img->height;j++)
 		{
 				for (int i =0; i<img->width; i++) {
-						int x =((*getPixel(img, i, j))*255);
+						for(int l = 0; l<img->channels;l++){
+						int x =((*getPixel(img,l, i, j))*255);
 						if(x<0)x=-x;//TODO
 						fprintf(f,"%d ",x>255?255:x);
+						}
 				}
 				fprintf(f,"\n");
 		}
@@ -70,16 +74,21 @@ int readPBM(struct Image* img,const char* filename)
 		}
 		char c[100];
 		fgets(c,100,f);
-		if(strcmp(c,"P2\n")){fprintf(logging,"this \"%s\" pbm is not supported.\n",c);exit(1);}
+		if(strcmp(c,"P2\n")&&strcmp(c, "P3\n")){fprintf(logging,"this \"%s\" is not supported.\n",c);exit(1);}
+		if(strcmp(c, "P3\n")==0)img->channels=3;
+		else img->channels=1;
 		fscanf(f,"%d %d",&img->width,&img->height);
 		fprintf(logging,"Image Loaded from %s\nWidth:%d Height:%d Channels : %d\n",filename,img->width,img->height,1);
 		int m;
 		fscanf(f,"%d",&m);
-		img->data = (double*)mallocate(sizeof(double)*img->width*img->height);
+		allocMat(img->channels,img->height*img->width,&img->data);
 		for(int j= 0; j<img->height;j++)
 				for (int i =0; i<img->width; i++) {
-						int x ;fscanf(f,"%d ",&x);
-						*getPixel(img,i,j)=x/(double)m;
+						for(int l = 0; l<img->channels;l++){
+								int x ;
+								fscanf(f,"%d ",&x);
+								*getPixel(img,0,i,j)=x/(double)m;
+						}
 				}
 		return 0;
 }
@@ -89,7 +98,7 @@ void printImage(struct Image* img)
 		for(int j= 0; j<img->height;j++)
 		{
 				for (int i =0; i<img->width; i++) {
-						printf("%lf ",*getPixel(img, i, j));
+						printf("%lf ",*getPixel(img,0, i, j));//TODO
 				}
 				printf("\n");
 		}
@@ -98,43 +107,41 @@ void printImage(struct Image* img)
 
 void freeImage(struct Image* img)
 {
-		free(img->data);
+		freeMat(img->channels,img->height*img->width,img->data);
 }
 
-void getSVD(struct Image* img, double***U,double***E,double***V,int k)
+void createSVD(struct Image* img, double***U,double***E,double***V,int k)
 {
 		int n = img->height,m=img->width;
-		*U = (double**)mallocate(sizeof(double*)*n);
-		for(int i = 0; i<n;i++)
-				(*U)[i]=(double*)mallocate(sizeof(double)*n);
+		allocMat(n,n,U);
+		allocMat(m,m,V);
+		allocMat(n,m,E);
+
+}
+
+void getSVD(struct Image* img,int l, double**U,double**E,double**V,int k)
+{
+		int n = img->height,m=img->width;
 		for(int i = 0; i<n;i++)
 				for(int j = 0; j<n;j++)
 				{
-						if(i==j)(*U)[i][j]=1.0;
-						else (*U)[i][j]=0.0;
+						if(i==j)U[i][j]=1.0;
+						else U[i][j]=0.0;
 				}
-		*V = (double**)mallocate(sizeof(double*)*m);
-		for(int i = 0; i<m;i++)
-				(*V)[i]=(double*)mallocate(sizeof(double)*m);
 		for(int i = 0; i<m;i++)
 				for(int j = 0; j<m;j++)
 				{
-						if(i==j)(*V)[i][j]=1;
-						else (*V)[i][j]=0;
+						if(i==j)V[i][j]=1;
+						else V[i][j]=0;
 				}
 	
-		*E = (double**)mallocate(sizeof(double*)*n);
-		for(int i = 0; i<n;i++)
-				(*E)[i]=(double*)mallocate(sizeof(double)*m);
 		for(int i = 0; i<n;i++)
 				for(int j = 0; j<m;j++)
 				{
-						(*E)[i][j]=*getPixel(img, j, i);
-						//if(i==j)(*E)[i][j]=1;
-						//else (*E)[i][j]=0;
+						E[i][j]=*getPixel(img,l, j, i);
 				}
 		
-		power_met(img, *U, *E, *V,k);
+		power_met(img, U, E, V,k);
 }
 
 void compressSVD(int n,int m,double** U, double** E,double** V,int k)
@@ -147,7 +154,7 @@ void compressSVD(int n,int m,double** U, double** E,double** V,int k)
 
 
 
-void setImgFromSVD(struct Image*img,double**U,double**E,double**V,int k)
+void setImgFromSVD(struct Image*img,int l,double**U,double**E,double**V,int k)
 {
 		double** C;
 		double** C2;
@@ -155,16 +162,16 @@ void setImgFromSVD(struct Image*img,double**U,double**E,double**V,int k)
 		allocMat(img->height,img->width,&C);
 		for(int i = 0; i<img->height;i++)
 		{
-				C2[i]=getPixel(img, 0, i);
+				C2[i]=getPixel(img,l, 0, i);
 		}
 		
 		matMul(img->height,k,k,U,E,C);
 	matMul(img->height,k,img->width,C,V,E);
-		fprintf(logging,"Error Frobenius :%lf\n",err(img->height,img->width,C2,E));
+		fprintf(logging,"Error Frobenius(Channel: %d) :%lf\n",l+1,err(img->height,img->width,C2,E));
 		for(int i = 0; i<img->height;i++)
 				for(int j = 0; j<img->width;j++)
 				{
-						*getPixel(img, j, i)=E[i][j];
+						*getPixel(img,l, j, i)=E[i][j];
 				}
 		freeMat(img->height,img->width,C);
 		
@@ -174,22 +181,20 @@ void setImgFromSVD(struct Image*img,double**U,double**E,double**V,int k)
 }
 void freeSVD(int n,int m,double** U, double** E,double** V)
 {
-		for(int i = 0; i<n;i++)
-		{
-				if(U)free(U[i]);
-				if(E)free(E[i]);
-		}
-		for(int j = 0; j<m;j++)
-				if(V)free(V[j]);
-		free(U);
+		freeMat(n,n,U);
+		freeMat(m,m,V);
+		freeMat(n,m,E);
 }
 
 void compress(struct Image* img,int k)
 {
 		int m = img->width, n=img->height;
 		double** U=0,**E=0,**V=0;
-		getSVD(img,&U,&E,&V,k);
-		setImgFromSVD(img,U,E,V,k);
+		createSVD(img, &U, &E, &V, k);
+		for(int l = 0; l<img->channels;l++){
+				getSVD(img,l,U,E,V,k);
+				setImgFromSVD(img,l,U,E,V,k);
+		}
 		freeSVD(n,m,U,E,V);
 }
 
@@ -210,10 +215,25 @@ int main()
 		f=fopen("init.txt", "r");
 		char file[256];
 		fscanf(f,"%s",file);
+		fscanf(f,"%d",&img.channels);
+		if(img.channels!=1&&img.channels!=3)
+		{
+				fprintf(logging,"channels are not valid(1 = greyscale, 3 = RGB). Falling back to greyscale.\n");
+				printf("channels are not valid(1 = greyscale, 3 = RGB). Falling back to greyscale, rewrite it.\n");
+				img.channels=1;
+				
+		}
+
 		getImage(&img,file);
 		fscanf(f,"%s",file);
 		int k;
 		fscanf(f,"%d",&k);
+		int ml = img.width>img.height?img.height:img.width;
+		if(k>ml)
+		{
+				fprintf(logging,"k>%d.Mapping k to %d.\n",ml,ml);
+				
+		}
 		fprintf(logging,"Values extracted from the init.txt file.\n");
 		fprintf(logging,"k = %d\n",k);
 		compress(&img,k);
