@@ -12,6 +12,8 @@ It contains data in the format:
 
 [image (.jpg,.png,.pbm)path relative to this directory or absolute path (under 255 character and no spaces included)]
 
+[channels 1=greyscale 3=RGB]
+
 [output .pbm file path relative to this directory or absolute path (under 255 character and no spaces included)]
 
 [value of K(no of most significant singular values to be used)]
@@ -19,6 +21,8 @@ It contains data in the format:
 For Example:
 
 ../figs/greyscale.png
+
+1
 
 ../output/test.pbm
 
