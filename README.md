@@ -11,13 +11,17 @@ In the directory in which you are running the executable, open the init.txt.
 It contains data in the format:
 
 [image (.jpg,.png,.pbm)path relative to this directory or absolute path (under 255 character and no spaces included)]
+
 [output .pbm file path relative to this directory or absolute path (under 255 character and no spaces included)]
+
 [value of K(no of most significant singular values to be used)]
 
 For Example:
 
 ../figs/greyscale.png
+
 ../output/test.pbm
+
 200
 
 (template in also in the folder \codes)
