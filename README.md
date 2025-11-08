@@ -29,7 +29,7 @@ For Example:
 # How to compile the code
 
 Using gcc,
-gcc main.c utilities.c methods.c -lm
+gcc main.c utilities.c methods.c -lm -O3
 this will produce a.out run it with the init.txt file
 
 # Error Handling
