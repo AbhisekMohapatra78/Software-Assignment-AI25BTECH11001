@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include <time.h>
 
 #define STB_IMAGE_IMPLEMENTATION
@@ -10,14 +9,18 @@
 #include "utilities.h"
 
 FILE* logging;
+int readPBM(struct Image* img,const char* filename);
 
 int getImage(struct Image* img,const char* filename)
 {
+		int l = strlen(filename);
+		if(strcmp(filename+l-4,".pbm")==0)return readPBM(img,filename);
 		int n;
 		unsigned char* data = stbi_load(filename,&img->width,&img->height,&n,0);
 		if(data == NULL)
 		{
 				printf("Error in reading Img\n");
+				fprintf(logging,"Error in reading Img\n");
 				exit(1);
 		}
 		fprintf(logging,"Image Loaded from %s\nWidth:%d Height:%d Channels : %d\n",filename,img->width,img->height,n);
@@ -53,6 +56,31 @@ int writeImage(struct Image* img,const char* filename)
 		}
 		
 
+		return 0;
+}
+int readPBM(struct Image* img,const char* filename)
+{
+		FILE* f;
+		f = fopen(filename,"r");
+		if(f == NULL)
+		{
+				printf("Error in reading Img\n");
+				fprintf(logging,"Error in reading Img\n");
+				exit(1);
+		}
+		char c[100];
+		fgets(c,100,f);
+		if(strcmp(c,"P2\n")){fprintf(logging,"this \"%s\" pbm is not supported.\n",c);exit(1);}
+		fscanf(f,"%d %d",&img->width,&img->height);
+		fprintf(logging,"Image Loaded from %s\nWidth:%d Height:%d Channels : %d\n",filename,img->width,img->height,1);
+		int m;
+		fscanf(f,"%d",&m);
+		img->data = (double*)mallocate(sizeof(double)*img->width*img->height);
+		for(int j= 0; j<img->height;j++)
+				for (int i =0; i<img->width; i++) {
+						int x ;fscanf(f,"%d ",&x);
+						*getPixel(img,i,j)=x/(double)m;
+				}
 		return 0;
 }
 
@@ -161,8 +189,6 @@ void compress(struct Image* img,int k)
 		int m = img->width, n=img->height;
 		double** U=0,**E=0,**V=0;
 		getSVD(img,&U,&E,&V,k);
-		//printf("%d\n",U);
-		//compress(img, k);
 		setImgFromSVD(img,U,E,V,k);
 		freeSVD(n,m,U,E,V);
 }
@@ -170,7 +196,7 @@ void compress(struct Image* img,int k)
 
 int main()
 {
-		char loggingfile[] = "../output/log.txt"; 
+		char loggingfile[] = "log.txt"; 
 		logging = fopen(loggingfile, "a");
 		if(logging==NULL) 
 		{
@@ -189,6 +215,7 @@ int main()
 		int k;
 		fscanf(f,"%d",&k);
 		fprintf(logging,"Values extracted from the init.txt file.\n");
+		fprintf(logging,"k = %d\n",k);
 		compress(&img,k);
 		writeImage(&img, file);
 		freeImage(&img);

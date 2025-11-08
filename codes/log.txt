@@ -1,485 +1,85 @@
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path and only 255 characters):../figs/greyscale.png
 Image Loaded from ../figs/greyscale.png
 Width:1024 Height:1024 Channels : 3
-Enter output (.pgm) file path (remove spaces in the path and only 255 characters):testgrey1.pbm
-enter the value of k:100
-Error Frobenius :41.940710
-Time taken about 57 seconds.
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path and only 255 characters):../figs/greyscale.png
-Image Loaded from ../figs/greyscale.png
-Width:1024 Height:1024 Channels : 3
-Enter output (.pgm) file path (remove spaces in the path and only 255 characters):testgrey1.pbm
-enter the value of k:100
-Error Frobenius :41.940710
-Time taken about 26.694646 seconds.
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path and only 255 characters):../figs/gauss.jpg
+Values extracted from the init.txt file.
+k = 200
+Error Frobenius :37.641406
+Time taken about 33.408767 seconds.
+this pbm is not supported.
+this "P2
+" pbm is not supported.
+Values extracted from the init.txt file.
+k = 200
+Error Frobenius :28.204188
+Time taken about 33.640733 seconds.
+Image Loaded from ../output/test.pbm
+Width:1024 Height:1024 Channels : 1
+Values extracted from the init.txt file.
+k = 200
+Error Frobenius :30.969929
+Time taken about 9.546118 seconds.
 Image Loaded from ../figs/gauss.jpg
 Width:1275 Height:1281 Channels : 3
-Enter output (.pgm) file path (remove spaces in the path and only 255 characters):testgauss5.pbm
-enter the value of k:600
-Error Frobenius :91.375548
-Time taken about 296.472601 seconds.
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ touch log.txt
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ 
-
-
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path and only 255 characters):../figs/greyscale.png
-Image Loaded from ../figs/greyscale.png
-Width:1024 Height:1024 Channels : 3
-Enter output (.pgm) file path (remove spaces in the path and only 255 characters):testgrey2.pbm
-enter the value of k:400
-Error Frobenius :29.731544
-Time taken about 167 seconds.
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path and only 255 characters):../figs/greyscale.png
-Image Loaded from ../figs/greyscale.png
-Width:1024 Height:1024 Channels : 3
-Enter output (.pgm) file path (remove spaces in the path and only 255 characters):testgrey2.png
-enter the value of k:400
-Error Frobenius :29.731544
-Time taken about 115.315247 seconds.
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path and only 255 characters):../figs/gauss.jpg
-Image Loaded from ../figs/gauss.jpg
-Width:1275 Height:1281 Channels : 3
-Enter output (.pgm) file path (remove spaces in the path and only 255 characters):testgauss4.pbm
-enter the value of k:400
-Error Frobenius :142.177885
-Time taken about 165.445629 seconds.
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ 
-
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path and only 255 characters):../figs/greyscale.png'
-Error in reading Img
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path and only 255 characters):../figs/greyscale.png
-Image Loaded from ../figs/greyscale.png
-Width:1024 Height:1024 Channels : 3
-Enter output (.pgm) file path (remove spaces in the path and only 255 characters):testgrey3.pbm
-enter the value of k:800
-Error Frobenius :14.378405
-Time taken about 324 seconds.
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path and only 255 characters):../figs/greyscale.png
-Image Loaded from ../figs/greyscale.png
-Width:1024 Height:1024 Channels : 3
-Enter output (.pgm) file path (remove spaces in the path and only 255 characters):testgrey3.pbm
-enter the value of k:800
-Error Frobenius :14.378405
-Time taken about 306.485898 seconds.
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path and only 255 characters):../figs/gauss.jpg
-Image Loaded from ../figs/gauss.jpg
-Width:1275 Height:1281 Channels : 3
-Enter output (.pgm) file path (remove spaces in the path and only 255 characters):testgauss.pbm
-enter the value of k:20
-Error Frobenius :413.004119
-Time taken about 22.311446 seconds.
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path and only 255 characters):../figs/gauss.jpg
-Image Loaded from ../figs/gauss.jpg
-Width:1275 Height:1281 Channels : 3
-Enter output (.pgm) file path (remove spaces in the path and only 255 characters):testgauss.pbm
-enter the value of k:^C
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path and only 255 characters):../figs/gauss.jpg
-Image Loaded from ../figs/gauss.jpg
-Width:1275 Height:1281 Channels : 3
-Enter output (.pgm) file path (remove spaces in the path and only 255 characters):testgauss2.pbm
-enter the value of k:70 
-Error Frobenius :348.033102
-Time taken about 37.442046 seconds.
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path and only 255 characters):../figs/gauss.jpg
-Image Loaded from ../figs/gauss.jpg
-Width:1275 Height:1281 Channels : 3
-Enter output (.pgm) file path (remove spaces in the path and only 255 characters):testgauss3.pbm
-enter the value of k:200
+Values extracted from the init.txt file.
+k = 200
 Error Frobenius :249.997357
-Time taken about 83.767904 seconds.
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ 
-
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path and only 255 characters):../figs/gloabe.jpg
-Error in reading Img
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path and only 255 characters):../figs/globe.jpg
-Image Loaded from ../figs/globe.jpg
-Width:840 Height:879 Channels : 3
-Enter output (.pgm) file path (remove spaces in the path and only 255 characters):testglobe3.pbm
-enter the value of k:400
-Error Frobenius :35.442830
-Time taken about 110 seconds.
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path and only 255 characters):../figs/globe.jpg
-Image Loaded from ../figs/globe.jpg
-Width:840 Height:879 Channels : 3
-Enter output (.pgm) file path (remove spaces in the path and only 255 characters):testglobe3.pbm
-enter the value of k:400
-Error Frobenius :35.442830
-Time taken about 81.018704 seconds.
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ls
-a.out           stb_image.h      testein.pbm     testgloabe2.pbm  testgrey1.pbm  test.pbm
-main.c          stb_image.h.gch  testgauss2.pbm  testglobe1.pbm   testgrey2.pbm  test.py
-power_method.c  test.c           testgauss3.pbm  testglobe2.pbm   testgrey2.png  utilities.c
-power_method.h  testein2.jpg     testgauss.pbm   testglobe3.pbm   testgrey3.pbm  utilities.h
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ rm test.py
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ rm test.c
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ls
-a.out           stb_image.h      testgauss2.pbm   testglobe1.pbm  testgrey2.pbm  utilities.c
-main.c          stb_image.h.gch  testgauss3.pbm   testglobe2.pbm  testgrey2.png  utilities.h
-power_method.c  testein2.jpg     testgauss.pbm    testglobe3.pbm  testgrey3.pbm
-power_method.h  testein.pbm      testgloabe2.pbm  testgrey1.pbm   test.pbm
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ 
-
-
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path and only 255 characters):../figs/globe.jpg
-Image Loaded from ../figs/globe.jpg
-Width:840 Height:879 Channels : 3
-Enter output (.pgm) file path (remove spaces in the path and only 255 characters):testglobe2.pbm
-enter the value of k:100
-Error Frobenius :83.227807
-Time taken about 52 seconds.
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path and only 255 characters):../figs/einstien.jpg
-Error in reading Img
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path and only 255 characters):../figs/einstein.jpg
-Image Loaded from ../figs/einstein.jpg
-Width:186 Height:182 Channels : 3
-Enter output (.pgm) file path (remove spaces in the path and only 255 characters):testein2.jpg
-enter the value of k:50
-Error Frobenius :21.398319
-Time taken about 25 seconds.
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path and only 255 characters):../figs/globe.jpg    
-Image Loaded from ../figs/globe.jpg
-Width:840 Height:879 Channels : 3
-Enter output (.pgm) file path (remove spaces in the path and only 255 characters):testgloabe2.pbm
-enter the value of k:100
-Error Frobenius :83.227807
-Time taken about 21.935065 seconds.
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ 
-
-
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/einstein.jpg
-Width:186 Height:182 Channels : 3
-enter the value of k:120
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/einstein.jpg
-Width:186 Height:182 Channels : 3
-enter the value of k:1
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/einstein.jpg
-Width:186 Height:182 Channels : 3
-enter the value of k:2
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/einstein.jpg
-Width:186 Height:182 Channels : 3
-enter the value of k:10
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/einstein.jpg
-Width:186 Height:182 Channels : 3
-enter the value of k:20
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/einstein.jpg
-Width:186 Height:182 Channels : 3
-enter the value of k:40
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/einstein.jpg
-Width:186 Height:182 Channels : 3
-enter the value of k:182
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/einstein.jpg
-Width:186 Height:182 Channels : 3
-enter the value of k:40
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ gcc main.c -lm
-/usr/bin/ld: /tmp/ccNkz80i.o: in function `getImage':
-main.c:(.text+0x18c6f): undefined reference to `mallocate'
-/usr/bin/ld: /tmp/ccNkz80i.o: in function `writeImage':
-main.c:(.text+0x18dc9): undefined reference to `getPixel'
-/usr/bin/ld: /tmp/ccNkz80i.o: in function `printImage':
-main.c:(.text+0x18e7a): undefined reference to `getPixel'
-/usr/bin/ld: /tmp/ccNkz80i.o: in function `getSVD':
-main.c:(.text+0x18f1f): undefined reference to `mallocate'
-/usr/bin/ld: main.c:(.text+0x18f55): undefined reference to `mallocate'
-/usr/bin/ld: main.c:(.text+0x19009): undefined reference to `mallocate'
-/usr/bin/ld: main.c:(.text+0x1903f): undefined reference to `mallocate'
-/usr/bin/ld: main.c:(.text+0x190f3): undefined reference to `mallocate'
-/usr/bin/ld: /tmp/ccNkz80i.o:main.c:(.text+0x19129): more undefined references to `mallocate' follow
-/usr/bin/ld: /tmp/ccNkz80i.o: in function `getSVD':
-main.c:(.text+0x1915e): undefined reference to `getPixel'
-/usr/bin/ld: main.c:(.text+0x191c9): undefined reference to `power_met'
-/usr/bin/ld: /tmp/ccNkz80i.o: in function `setImgFromSVD':
-main.c:(.text+0x19268): undefined reference to `mallocate'
-/usr/bin/ld: main.c:(.text+0x19287): undefined reference to `allocMat'
-/usr/bin/ld: main.c:(.text+0x192b9): undefined reference to `getPixel'
-/usr/bin/ld: main.c:(.text+0x192f2): undefined reference to `matMul'
-/usr/bin/ld: main.c:(.text+0x1931c): undefined reference to `matMul'
-/usr/bin/ld: main.c:(.text+0x19340): undefined reference to `freeMat'
-/usr/bin/ld: main.c:(.text+0x193c1): undefined reference to `getPixel'
-collect2: error: ld returned 1 exit status
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ gcc main.c utilities.c power_method.c -lm
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/einstein.jpg
-Width:186 Height:182 Channels : 3
-enter the value of k:12
-Segmentation fault (core dumped)
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ gcc main.c utilities.c power_method.c -lm
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/einstein.jpg
-Width:186 Height:182 Channels : 3
-enter the value of k:12
-Segmentation fault (core dumped)
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ gcc main.c utilities.c power_method.c -lm
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/einstein.jpg
-Width:186 Height:182 Channels : 3
-enter the value of k:12
-Error :123.567977abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ gcc main.c utilities.c power_method.c -lm
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/einstein.jpg
-Width:186 Height:182 Channels : 3
-enter the value of k:12
-Error :38.397172
-free(): invalid pointer
-Aborted (core dumped)
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ gcc main.c utilities.c power_method.c -lm
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/einstein.jpg
-Width:186 Height:182 Channels : 3
-enter the value of k:12
-Error :38.397172
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/einstein.jpg
-Width:186 Height:182 Channels : 3
-enter the value of k:20
-Error :32.463701
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/einstein.jpg
-Width:186 Height:182 Channels : 3
-enter the value of k:30
-Error :28.017494
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/einstein.jpg
-Width:186 Height:182 Channels : 3
-enter the value of k:40
-Error :24.420438
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/einstein.jpg
-Width:186 Height:182 Channels : 3
-enter the value of k:60
-Error :18.585364
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/einstein.jpg
-Width:186 Height:182 Channels : 3
-enter the value of k:17
-Error :34.297873
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/einstein.jpg
-Width:186 Height:182 Channels : 3
-enter the value of k:70
-Error :15.994919
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/einstein.jpg
-Width:186 Height:182 Channels : 3
-enter the value of k:90
-Error :11.586369
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/einstein.jpg
-Width:186 Height:182 Channels : 3
-enter the value of k:100
-Error :9.797069
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/einstein.jpg
-Width:186 Height:182 Channels : 3
-enter the value of k:182
-Error :4.169984
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/einstein.jpg
-Width:186 Height:182 Channels : 3
-enter the value of k:120
-Error :6.950689
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/einstein.jpg
-Width:186 Height:182 Channels : 3
-enter the value of k:186
-Segmentation fault (core dumped)
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/einstein.jpg
-Width:186 Height:182 Channels : 3
-enter the value of k:182
-Error :4.169984
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/einstein.jpg
-Width:186 Height:182 Channels : 3
-enter the value of k:50
-Error :21.398319
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ gcc main.c utilities.c power_method.c -lm
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/einstein.jpg
-Width:186 Height:182 Channels : 3
-enter the value of k:123
-Error Frobenius :6.461003
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ gcc main.c utilities.c power_method.c -lm
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/globe.jpg
-Width:840 Height:879 Channels : 3
-enter the value of k:123
-Error Frobenius :75.859329
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/globe.jpg
-Width:840 Height:879 Channels : 3
-enter the value of k:40
-Error Frobenius :118.233842
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/globe.jpg
-Width:840 Height:879 Channels : 3
-enter the value of k:70
-Error Frobenius :95.287343
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/globe.jpg
-Width:840 Height:879 Channels : 3
-enter the value of k:100
-Error Frobenius :83.227807
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/globe.jpg
-Width:840 Height:879 Channels : 3
-enter the value of k:400
-Error Frobenius :35.442830
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/globe.jpg
-Width:840 Height:879 Channels : 3
-enter the value of k:840
-Error Frobenius :20.228878
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Image Loaded from ../figs/globe.jpg
-Width:840 Height:879 Channels : 3
-enter the value of k:400
-Error Frobenius :35.442830
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ gcc main.c utilities.c power_method.c -lm
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path):../figs/globe.jpg
-Image Loaded from ../figs/globe.jpg
-Width:840 Height:879 Channels : 3
-enter the value of k:12
-Error Frobenius :172.664267
-Enter image file path (remove spaces in the path):test.pbm
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path):../figs/globe.jpg
-Image Loaded from ../figs/globe.jpg
-Width:840 Height:879 Channels : 3
-enter the value of k:12
-^C
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ gcc main.c utilities.c power_method.c -lm
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path):../figs/globe.jpg
-Image Loaded from ../figs/globe.jpg
-Width:840 Height:879 Channels : 3
-Enter image file path (remove spaces in the path):test.pbm
-enter the value of k:12 
-Error Frobenius :172.664267
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path):../figs/greyscale.png    
+Time taken about 17.210611 seconds.
+Image Loaded from ../figs/gauss.jpg
+Width:1275 Height:1281 Channels : 3
+Values extracted from the init.txt file.
+k = 600
+Error Frobenius :91.375548
+Time taken about 82.120475 seconds.
+Image Loaded from ../figs/gauss.jpg
+Width:1275 Height:1281 Channels : 3
+Values extracted from the init.txt file.
+k = 600
+Error Frobenius :91.375548
+Time taken about 84.940032 seconds.
+Image Loaded from ../figs/gauss.jpg
+Width:1275 Height:1281 Channels : 3
+Values extracted from the init.txt file.
+k = 600
+Error Frobenius :91.375548
+Time taken about 85.356155 seconds.
+Image Loaded from ../figs/gauss.jpg
+Width:1275 Height:1281 Channels : 3
+Values extracted from the init.txt file.
+k = 600
+Error Frobenius :91.375548
+Time taken about 83.745036 seconds.
 Image Loaded from ../figs/greyscale.png
 Width:1024 Height:1024 Channels : 3
-Enter image file path (remove spaces in the path):test.pbm
-enter the value of k:12
-Error Frobenius :80.506126
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path):../figs/greyscale.png
+Values extracted from the init.txt file.
+k = 600
+Error Frobenius :22.656697
+Time taken about 43.903917 seconds.
 Image Loaded from ../figs/greyscale.png
 Width:1024 Height:1024 Channels : 3
-Enter image file path (remove spaces in the path):test.pbm
-enter the value of k:400
+Values extracted from the init.txt file.
+k = 600
+Error Frobenius :22.656697
+Time taken about 131.850160 seconds.
+Image Loaded from ../figs/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+k = 400
 Error Frobenius :29.731544
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ gcc main.c utilities.c power_method.c -lm
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path):../figs/greyscale.png
-Image Loaded from ../figs/greyscale.png
-Width:1024 Height:1024 Channels : 3
-Enter image file path (remove spaces in the path):test.pbm
-enter the value of k:400
-Error Frobenius :29.731544
-Time taken about 142 seconds.
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path):../figs/globe.png
-error in reading imgEnter image file path (remove spaces in the path):../figs/globe.jpg
-enter the value of k:^C
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path):cdcd.png
-error in reading imgEnter image file path (remove spaces in the path):^C
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ gcc main.c utilities.c power_method.c -lm
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path):wsd
-Aborted (core dumped)
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ gcc main.c utilities.c power_method.c -lm
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path):fewcs
-error in reading img
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ gcc main.c utilities.c power_method.c -lm
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path):../figs/globe.jpg
-Image Loaded from ../figs/globe.jpg
-Width:840 Height:879 Channels : 3
-Enter image file path (remove spaces in the path):test.pbm
-enter the value of k:400
-ut 142 Error Frobenius :35.442830
-Time taken about 116 seconds.
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path):^C
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ gcc main.c utilities.c power_method.c -lm
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path and only 255 characters):^C
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path and only 255 characters):../figs/globe.png
-Error in reading Img
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path and only 255 characters):../figs/globe.jpg
-Image Loaded from ../figs/globe.jpg
-Width:840 Height:879 Channels : 3
-Enter output (.pgm) file path (remove spaces in the path and only 255 characters):testglobe1.pbm
-enter the value of k:50
-Error Frobenius :108.839559
-Time taken about 42 seconds.
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path and only 255 characters):../figs/einstein.jpg
+Time taken about 76.636397 seconds.
 Image Loaded from ../figs/einstein.jpg
 Width:186 Height:182 Channels : 3
-Enter output (.pgm) file path (remove spaces in the path and only 255 characters):testein.pbm
-enter the value of k:30
-Error Frobenius :28.017494
-Time taken about 29 seconds.
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path and only 255 characters):../figs/einstein.jpg
+Values extracted from the init.txt file.
+k = 100
+Error Frobenius :9.797069
+Time taken about 0.970111 seconds.
 Image Loaded from ../figs/einstein.jpg
 Width:186 Height:182 Channels : 3
-Enter output (.pgm) file path (remove spaces in the path and only 255 characters):testein.pbm   
-enter the value of k:30
-Error Frobenius :28.017494
-Time taken about 35 seconds.
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ gcc main.c utilities.c power_method.c -lm
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path and only 255 characters):../figs/einstein.jpg
-Image Loaded from ../figs/einstein.jpg
-Width:186 Height:182 Channels : 3
-Enter output (.pgm) file path (remove spaces in the path and only 255 characters):testein.pbm
-enter the value of k:30
-Error Frobenius :28.017494
-Time taken about 0.536284 seconds.
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ ./a.out
-Enter image file path (remove spaces in the path and only 255 characters):../figs/globe.jpg
-Image Loaded from ../figs/globe.jpg
-Width:840 Height:879 Channels : 3
-Enter output (.pgm) file path (remove spaces in the path and only 255 characters):testglobe1.pbm
-enter the value of k:50
-Error Frobenius :108.839559
-Time taken about 14.202047 seconds.
-abhisekmohapatra@fedora:~/Abhisek/math/matrix theory/softwareproject/codes$ 
-
+Values extracted from the init.txt file.
+k = 100
+Error Frobenius :9.797069
+Time taken about 0.215841 seconds.
+Image Loaded from ../figs/nebula.jpg
+Width:3840 Height:2160 Channels : 3
+Values extracted from the init.txt file.
+k = 100
+Error Frobenius :291.960796
+Time taken about 202.156517 seconds.

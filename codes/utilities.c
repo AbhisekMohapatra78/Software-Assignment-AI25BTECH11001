@@ -80,6 +80,37 @@ void QR(int n, int m, double** A, double**B,double**C)
 				}
 		}
 }
+
+void holderReflection(int n, double* x, double* v)
+{
+		double a = dotVec(n,x,x);
+		copyMat(1,n,&x, &v);
+		v[0]+=(x[0]>0?1:-1)*a;
+}
+
+void QR_H(int n, int m, double** A, double**Q,double**R)
+{
+		for(int i = 0; i<m;i++)
+				for(int j =0;j<m;j++)
+				{
+						if(i==j)Q[i][j]=1;
+						else Q[i][j]=0;
+				}
+		copyMat(n, m, A, R);
+		double** v;
+		double** A_T;
+		allocMat(m, n, &A);
+		transposeMat(n, m, A, A_T);
+		for(int i = 0; i<n;i++)
+		{
+				if(i>=m)break;
+				allocMat(1, m-i, &v);
+				holderReflection(m-i, A_T[i]+i, *v);
+				
+
+				freeMat(1,m-i,v);
+		}
+}
 void orthogonalize(int n, int m, double** A, double**B)
 {
 		for(int i = 0; i<m;i++)

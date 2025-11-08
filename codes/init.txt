@@ -1,5 +1,5 @@
-../figs/greyscale.png
+../figs/nebula.jpg
 ../output/test.pbm
-200
+2000
 
 

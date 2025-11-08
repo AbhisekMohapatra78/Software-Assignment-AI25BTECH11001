@@ -1,0 +1,187 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\graphicspath{{./figs/}}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage{caption}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}     
+\usepackage{xparse}
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+\begin{document}
+
+\title{Course Project (Software) : Image Compression Using Truncated SVD}
+\author{AI25BTECH11001 - ABHISEK MOHAPATRA}
+{\let\newpage\relax\maketitle}
+
+\begin{enumerate}	
+
+\item \textbf{Summary of Gibert Strang's video}
+
+\item \textbf{Explanation of the implemented algorithm}
+
+\item \textbf{Compare different algorithms and explain why did you choose the particular algorithm}
+
+\item \textbf{Reconstructed images for different k}
+
+\item \textbf{Error analysis}
+
+\item \textbf{Discussion of trade-offs and reflections on implementation choice}
+
+\end{enumerate}
+
+
+
+\section*{\LARGE Summary of Gibert Strang's video}
+\vspace{5mm}
+
+Each matrix $\vec{A}$ of order $m\times n$ can expressed in the form 
+\begin{align}
+		\vec{A} = \vec{U}\vec{\Sigma}\vec{V}^\top
+\end{align}
+where, $\vec{U}$ and $\vec{V}$ are orthogonal matrix of order $m \times m$ and $n \times n$, and
+\begin{align}
+		\vec{\Sigma} = diag\myvec{\sigma_0&\sigma_1&\sigma_2&... }_{m\times n}
+\end{align}
+
+This can understand as basis vector of row space converted in column space
+\begin{align}
+		\vec{A}\vec{V} = \vec{U}\vec{\Sigma}
+\end{align}
+or,
+\begin{align}
+		\vec{A}\vec{v}_i = \sigma_i\vec{u}_i
+\end{align}
+
+And,$\vec{U}$ and $\vec{V}$ can be found by 
+\begin{align}
+		\vec{A}\vec{A}^\top = \vec{U}\vec{\Sigma}\vec{\Sigma}^\top\vec{U}^\top
+\end{align}
+\begin{align}
+		\vec{A}^\top\vec{A} = \vec{U}\vec{\Sigma}\vec{\Sigma}^\top\vec{U}^\top
+\end{align}
+where $\sigma_i^2$ are the eigen values of $\vec{A}\vec{A}^\top$ and $\vec{A}^\top\vec{A}$
+
+
+
+\section*{\LARGE Explanation of the Implemented Algorithm}
+\vspace{5mm}
+\large\textbf{Block Power Method}
+\vspace{5mm}
+
+Block Power method replies on Power method for finding the eigenvector with the largest eigen vector.
+
+\subsection*{Power Method}
+
+$\rightarrow$ Each vector can be expressed in terms of as a linear combination of eigen vectors (as basis vector).
+
+\begin{align}
+\vec{v} = \mu_0\vec{v}_0 +\mu_1\vec{v}_1 +\mu_2\vec{v}_2 +\mu_3\vec{v}_3 + ... +\mu_{n-1}\vec{v}_{n-1} 
+\end{align}
+where $\vec{v}_i$ are eigen vector to matrix.
+
+$\rightarrow$ So, if we multiply the matrix with the vector the eigen values will be multiplied with each corresponding iron vectors and if we keep on multiplying this the eigen value of the eigen vectors with the largest eigen values will dominant over other vectors and the sequence will converge to a vector parallel to the eigen vector with the largest eigen value. 
+
+\begin{align}
+\vec{A}^m\vec{v} &= \mu_0\lambda_0^m\vec{v}_0 +\mu_1\lambda_1^m\vec{v}_1 +\mu_2\lambda_2^m\vec{v}_2 +\mu_3\lambda_3^m\vec{v}_3 + ... +\mu_{n-1}\lambda_{n-1}^m\vec{v}_{n-1} 
+\end{align}
+
+\begin{align}
+\vec{A}^m\vec{v} = \mu_0\lambda_0^m\left(\vec{v}_0 +\frac{\mu_1\lambda_1^m}{\mu_0\lambda_0^m}\vec{v}_1 +\frac{\mu_2\lambda_2^m}{\mu_0\lambda_0^m}\vec{v}_2 +\frac{\mu_3\lambda_3^m}{\mu_0\lambda_0^m}\vec{v}_3 + ... +\frac{\mu_{n-1}\lambda_{n-1}^m}{\mu_0\lambda_0^m}\vec{v}_{n-1} \right)
+\end{align}
+
+\begin{align}
+\lim_{m\rightarrow\infty}\vec{A}^m\vec{v} = \mu_0\lambda_0^m\vec{v}_0
+\end{align}
+
+$\rightarrow$ First we will initialise a random matrix $\vec{V}$ of n vectors then we will multiply $\vec{A}^\top\vec{A}$ ($\vec{A}$ = given matrix) to each of this vector and then Orthonormalized and continue this to a certain number of this step.
+
+$\rightarrow$ By applying this method, we will generate a Matrix with mutually perpendicular vectors so that these vectors are unique singular vectors and correspond to a unique singular value.
+This is our $\vec{V}$ matrix.
+
+Initially:
+
+\begin{align}
+\vec{V}:=\myvec{\vec{v_0}&\vec{v_1}&\vec{v_2}&...&\vec{v_{n-1}}} 
+\end{align}
+where $\vec{v}_i$ are randomly (distinct to each other) unit vectors.
+
+Iteration upto m:
+\begin{align}
+\vec{V}:=\vec{A^\top A}\vec{V} 
+\end{align}
+\begin{align}
+\vec{V}:=orthonorm(\vec{V})
+\end{align}
+
+Finally:
+\begin{align}
+let\quad \vec{B}= \vec{A}\vec{V}
+\end{align}
+\begin{align}
+U:= orthonorm(\vec{B})
+\end{align}
+And, let $\vec{C}$ be the product of the elementary operation performed on $\vec{B}$ to find $\vec{U}$.
+\begin{align}
+\Sigma \approx C \quad as \quad m\rightarrow\infty 
+\end{align}
+or, we take the diagonal elements of C as other vanishs as m increases.
+
+\section*{\LARGE Compare Different Algorithms and Explain Why Did You Choose the Particular Algorithm}
+
+In comparision to other algorithms, this algorithm is :
+\begin{itemize}
+    \item very easy to understand
+    \item easy to implement 
+    \item this algorithm has some base to basis of svd (obtaining svd from $\vec{A}^\top\vec{A}$ and $\vec{A}\vec{A}^\top$) 
+\end{itemize}
+
+But there are some other trade of such that it is: 
+\begin{itemize}
+    \item very slow then others
+    \item numerically instability
+    \item requires higher value of K for better image
+\end{itemize}
+
+I used it as it will increase the understanding of matrices in general and easy to implement.
+
+
+\section*{\LARGE Reconstructed images for different k}
+\section*{\LARGE Error analysis}
+
+\section*{\LARGE Discussion of Trade-offs and Reflections on Implementation Choice}
+
+Using the power block method we can get our images compressed in like 5 to 10 minutes but there are a few drawbacks to this method first it is very slow in comparison to other. Secondly it produce noisy images at low values of the k. Thirdly, this algorithm is also not perfect as it doesn't give the actual singular values correctly and even make mistakes in some of the lower values of k. 
+
+Methods like Golub Khan method which is very fast efficient and in the mean while is stable and does it produce very good images at lower value of k and is widely used.
+
+\end{document}
+

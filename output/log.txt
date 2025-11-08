@@ -38,3 +38,8 @@ Width:1024 Height:1024 Channels : 3
 Values extracted from the init.txt file.
 Error Frobenius :37.641406
 Time taken about 34.162449 seconds.
+Image Loaded from ../figs/greyscale.png
+Width:1024 Height:1024 Channels : 3
+Values extracted from the init.txt file.
+Error Frobenius :37.641406
+Time taken about 33.368754 seconds.
